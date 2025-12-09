@@ -11,6 +11,7 @@ import WaybillScreen from '../screens/WaybillScreen';
 import GenericScreen from '../screens/GenericScreen';
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import SearchScreen from '../screens/SearchScreen';
 import SidebarMenu from '../components/SidebarMenu';
 import { colors } from '../styles/colors';
 
@@ -21,6 +22,7 @@ function EarningsStack() {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Screen name="Search" component={SearchScreen} />
             <Stack.Screen name="Profile" component={ProfileScreen} />
             <Stack.Screen name="EarningsHome" component={EarningsScreen} />
             <Stack.Screen name="EarningsActivity" component={EarningsActivityScreen} />

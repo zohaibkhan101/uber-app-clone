@@ -45,7 +45,7 @@ export default function HomeScreen({ navigation }) {
                     </TouchableOpacity>
 
                     {/* Search Button */}
-                    <TouchableOpacity style={styles.roundButton} onPress={() => navigation.navigate('Inbox')}>
+                    <TouchableOpacity style={styles.roundButton} onPress={() => navigation.navigate('Search')}>
                         <Ionicons name="search" size={24} color={colors.white} />
                     </TouchableOpacity>
                 </View>
@@ -168,7 +168,7 @@ export default function HomeScreen({ navigation }) {
                         <TouchableOpacity style={{ marginRight: 20 }}>
                             <Ionicons name="options" size={24} color={colors.white} />
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Search')}>
                             <Ionicons name="search" size={24} color={colors.white} />
                         </TouchableOpacity>
                     </View>
